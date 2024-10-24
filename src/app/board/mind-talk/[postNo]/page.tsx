@@ -70,7 +70,7 @@ export default function PostDetail() {
           Usercode: 0,
           No: Number(params.postNo), // params.postNo를 숫자로 변환
         };
-        const response = await axios.post<ApiResponse>('https://apitest.mindcity.co.kr/api/mission/readcomment', postParams);
+        const response = await axios.post<ApiResponse>('https://api.mindcity.co.kr/api/mission/readcomment', postParams);
 
         setPost(response.data.resultList[0]);
       } catch (error) {

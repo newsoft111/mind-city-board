@@ -92,12 +92,12 @@ export default function PostDetail() {
           Usercode: 0,
           No: Number(params.postNo),
         };
-        const postResponse = await axios.post<ApiResponse>('https://apitest.mindcity.co.kr/api/bbs/readbbs', postParams);
+        const postResponse = await axios.post<ApiResponse>('https://api.mindcity.co.kr/api/bbs/readbbs', postParams);
         const fetchedPost = postResponse.data.resultList[0];
         setPost(fetchedPost);
 
         if (fetchedPost.Dcnt > 0) {
-          const commentResponse = await axios.post<CommentApiResponse>('https://apitest.mindcity.co.kr/api/bbs/get_datt', postParams);
+          const commentResponse = await axios.post<CommentApiResponse>('https://api.mindcity.co.kr/api/bbs/get_datt', postParams);
           setComments(commentResponse.data.resultList);
         }
       } catch (error) {

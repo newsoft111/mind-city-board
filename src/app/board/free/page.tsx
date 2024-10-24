@@ -56,7 +56,7 @@ interface PostsParams {
 }
 
 function getPosts(params: PostsParams) {
-  return axios.post<ApiResponse>('https://apitest.mindcity.co.kr/api/bbs/getbbs_home', params)
+  return axios.post<ApiResponse>('https://api.mindcity.co.kr/api/bbs/getbbs_home', params)
     .then(response => response.data)
     .catch(error => {
       console.error('Error fetching posts:', error);
@@ -70,7 +70,7 @@ export default function PostList() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
-  const postsPerPage = 2;
+  const postsPerPage = 10;
   const isMobile = useMediaQuery('(max-width:600px)');
 
   const truncateText = (text: string, maxLength: number) => {

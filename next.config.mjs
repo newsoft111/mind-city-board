@@ -5,7 +5,7 @@ const nextConfig = {
       return [
         {
           source: '/ui/photo/:path*',
-          destination: 'https://apitest.mindcity.co.kr/ui/photo/:path*',
+          destination: 'https://api.mindcity.co.kr/ui/photo/:path*',
         },
       ]
     },
