@@ -47,6 +47,14 @@ export default function DrawerAppBar() {
             position: 'relative', 
             minHeight: '160px',
           }}>
+            <Box sx={{ 
+              position: 'absolute',
+              bottom: 0,
+              left: 35,
+              display: { xs: 'none', sm: 'block' }
+            }}>
+              <Image src="/images/duck.svg" alt="duck" width={100} height={100} />
+            </Box>
             
             <Box sx={{
               position: 'absolute',

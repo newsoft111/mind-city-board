@@ -13,13 +13,13 @@ const Footer = () => {
     <Box component="footer" sx={{ mt: 3 }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Link 
-                href="https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B8%EB%93%9C%EC%8B%9C%ED%8B%B0/id6450497438" 
+                href="https://apps.apple.com/kr/app/%EB%A7%88%EC%9D%B8%EB%93%9C%EC%8B%9C%ED%8B%B0-mindcity/id1663107997" 
                 sx={{ mr: 1 }}
             >
                 <Image src="/images/app-store.svg" alt="앱스토어" width={150} height={50} />
             </Link>
             <Link 
-                href="https://play.google.com/store/apps/details?id=com.daineap.mindcity&hl=ko&gl=US&pli=1" 
+                href="https://play.google.com/store/apps/details?id=com.kobotis.mindcity&hl=ko" 
             >   
                 <Image src="/images/play-store.svg" alt="플레이스토어" width={150} height={50} />
                 
